@@ -17,9 +17,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
+    mylabel.cpp \
     widget.cpp
 
 HEADERS += \
+    mylabel.h \
     widget.h
 
 FORMS += \
