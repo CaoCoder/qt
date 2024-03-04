@@ -1,5 +1,6 @@
 #ifndef __MY_DATA__
 #define __MY_DATA__
+#include "util.hpp"
 #include <mysql/mysql.h>
 #include <iostream>
 #include <mutex>
