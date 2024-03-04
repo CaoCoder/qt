@@ -41,12 +41,12 @@ void DataTest()
 	video["image"] = "/image/robot.jpg";
 
     tb_video.Insert(video);
-	 tb_video.SelectAll(&video);
+	tb_video.SelectAll(&video);
 	// tb_video.SelectOne(1, &video);
 	// tb_video.SelectLike("金刚", &video);
-	// std::string body;
-	// aod::JsonUtil::Serialize(video, &body);
-	// std::cout << body << std::endl;
+	std::string body;
+	aod::JsonUtil::Serialize(video, &body);
+	std::cout << body << std::endl;
 }
 int main()
 {
