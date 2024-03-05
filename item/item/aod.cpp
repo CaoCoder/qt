@@ -1,6 +1,5 @@
 #include "util.hpp"
 #define ROOT "www"
-#include "data.hpp"
 void UtilTest()
 {
     
@@ -30,28 +29,9 @@ void JsonUtilTest()
 
     std::cout << stu["姓名"].asCString() ;
 }
-
-void DataTest()
-{
-    aod::TableVideo tb_video;
-    Json::Value video;
-    video["name"] = "变形金刚";
-    video["info"] = "这是一个会变形的机器人，机器人大战，精彩纷呈~!";
-	video["video"] = "/video/robot.ma4";
-	video["image"] = "/image/robot.jpg";
-
-    tb_video.Insert(video);
-	tb_video.SelectAll(&video);
-	// tb_video.SelectOne(1, &video);
-	// tb_video.SelectLike("金刚", &video);
-	std::string body;
-	aod::JsonUtil::Serialize(video, &body);
-	std::cout << body << std::endl;
-}
 int main()
 {
     // UtilTest();
-    // JsonUtilTest();
-    DataTest();
+    JsonUtilTest();
     return 0;
 }

@@ -52,7 +52,7 @@ class PythonService(win32serviceutil.ServiceFramework):
         while self.run:
             try:
                 now = datetime.datetime.now()
-                if now.minute == 0 or now.minute == 10 or now.minute == 5 or now.minute == 15 or now.minute == 25 or now.minute == 35 or now.minute == 45 or now.minute == 20 or now.minute == 30  or now.minute == 40  or now.minute == 50  or now.minute == 55:  # 每小时0分、30分检测一次ip变化
+                if now.minute == 0 or now.minute == 15:  # 每小时0分、30分检测一次ip变化
                     IP = get_public_ip()
                     if self.local_ip != IP:
                         self.local_ip = IP
