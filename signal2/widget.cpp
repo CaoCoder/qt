@@ -22,7 +22,7 @@ void Widget::handleMySignal(const QString & text)
     this->setWindowTitle(text);
 }
 
-
+//这个槽函数会自动连接
 void Widget::on_pushButton_clicked ()
 {
     emit mySignal("带参数的信号");
