@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>caixukun.png</file>
+    </qresource>
+</RCC>
